@@ -40,7 +40,8 @@ def get_openapi_yaml():
 def clone_repo(repo_url):
     """Clone a Git repository to a temporary directory and return the path."""
     temp_path = repo_url.split('://')[-1].replace('/', '_')  # create a unique temporary path
-    Repo.clone_from(repo_url, temp_path)
+    if not os.path.exists(temp_path):
+        Repo.clone_from(repo_url, temp_path)
     return temp_path
 
 @app.route('/inspect_folder', methods=['POST', 'OPTIONS'])
