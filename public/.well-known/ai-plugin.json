@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name_for_human": "Repo Inspector",
   "name_for_model": "repo_inspector",
-  "description_for_human": "Inspect public Git Repositories. Submit a GitHub, Gitlab, etc., HTTPS link. The repo gets cloned and reviewed using ChatGPT.",
+  "description_for_human": "Inspect Git Repositories. Submit a GitHub, Gitlab, etc., HTTPS link. The repo gets cloned and reviewed using ChatGPT.",
   "description_for_model": "I'm a Repo Inspector that can inspect any public Git Repository provided by the user. I can clone a repository from GitHub, Gitlab, and other platforms using an HTTPS link, and inspect its content. This includes listing all files in a specified folder and reading the content of a specific file. This way, users can get insights about a codebase quickly and efficiently, even before they clone it themselves.",
   "auth": {
       "type": "none"
